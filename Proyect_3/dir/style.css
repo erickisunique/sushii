@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color:rgb(0, 0, 0);   
+
+}
+body{
+    max-width: 1366px;
+    max-height: 2000px;
+    margin:auto;
+}
+
+/* <-----------------------ONU links-------------------------->*/
+#house{
+    float:left;
+    
+}
+header{
+    position:fixed;
+    width:1366px;
+    height:100px;
+    background-color: #dac975;
+    padding: 0 0 0 1%;
+    z-index: 1000;
+}
+
+/* <-----------------------Navigation-------------------------->*/
+nav {
+    margin-left:100px;
+    width:800px;
+    float:left;
+    padding: 28px 0 0 1%;
+}
+
+.dropbtn {
+    background-color: #dac975;
+    color: #EE3424;
+    font-weight: 600;
+    padding: 0 30px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9c9;
+    min-width: 460px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.692);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 20px;
+    color: black;
+    height: 70px; 
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: rgba(207, 207, 207, 0.443);
+}
+.dropdown:hover .dropdown-content {
+    
+    bottom: height;
+    display:block;
+}
+.dropdown:hover .dropbtn {
+    transition: .25s;
+    background-color: #f9f9f9;
+    color: black;  
+}
+/*<-----------------------Dropdown arrows--------------------->*/
+.fa-solid{
+    position: absolute; 
+    margin-left:5px;
+    color: rgb(126, 21, 21);
+}
+/* <-----------------------Contacts-------------------------->*/
+.contactos{
+    margin-left:0px;
+    display:inline-block;
+}
+
+main {
+    
+    height: 900px;
+    width: 1366px;
+    position: relative;
+    text-align: center;
+}
+
+.hs1 {
+    height: 662px;
+    width: 468px;
+    background-color:#cb6e6e ;
+    position: absolute;
+    left: 122px;
+    bottom: 20px;
+    border-radius: 60px;
+    background-image: url("Mesa\ de\ trabajo\ 1fi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hs1 article {
+    width: 408px;
+    height: 558px;
+    background-color: #f4f4f4b6;
+    position: relative;
+    top: 50px;
+    padding-top: 18px;
+    border-radius: 50px;
+    margin-left:28px;
+}
+.hs1 h3 {
+    width: 373px;
+    height: 62px;
+    background-color:#D9D9D9;
+    text-align: center;
+    padding-top: 20px;
+    margin-left:16px;
+}
+.hs1 p {
+    width: 372px;
+    height: 80px;
+    margin-top: 60px;
+    background: #D9D9D9;
+    padding-top: 20px;
+    font-weight: 500;
+    margin-left:16px;
+}
+.hs1 p:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    color: white;
+    background-color: rgb(243, 27, 38);
+}
+.hs2 {
+    height: 662px;
+    width: 468px;
+    background-color:#6EC6CB ;
+    position: absolute;
+    right: 192px;
+    bottom: 20px;
+    border-radius: 60px;
+    background-image: url("Mesa\ de\ trabajo\ 1fi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hs2 article {
+    width: 408px;
+    height: 558px;
+    background-color: #f4f4f4b6;
+    position: relative;
+    top: 50px;
+    padding-top: 18px;
+    border-radius: 50px;
+    margin-left:28px;
+   
+}
+.hs1 a {
+    text-decoration: none;
+    color: black;
+}
+.hs2 h3 {
+    width: 373px;
+    height: 62px;
+    background-color: #D9D9D9;
+    text-align: center;
+    padding-top: 20px;
+    margin-left:16px;
+}
+.hs2 p {
+    width: 372px;
+    height: 80px;
+    margin-top: 60px;
+    background-color: #D9D9D9;
+    padding-top: 20px;
+    font-weight: 500;
+    margin-left:16px;
+}
+.hs2 a {
+    text-decoration: none;
+    color: black;
+}
+.hs2 p:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    color: white;
+    background-color: #6EC6CB;
+}
+footer{
+    margin-top:200px;
+    float:left;
+    background-color: #e4d486;
+    height:200px;
+    width:1366px;
+    padding: 25px 0 0 0;
+}
+.footer_img{
+    margin-right:232px;
+    margin-left:70px;
+    display:inline-block;
+}

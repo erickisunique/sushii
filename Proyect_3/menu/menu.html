@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3bb867d20.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <body background="fondo1.jpg"></body>
+
+    <header>
+        <div id="house">
+            <img src="ldlogo (1).png" alt="home" width="100" height="100">
+        </div>
+
+        <nav>
+            <div class="dropdown">
+                <a href=""><button class="dropbtn">
+                        Portada <i class="fa-solid fa-angles-down"></i></button></a>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Menu<i class="fa-solid fa-angles-down"></i></button></button>
+                <div class="dropdown-content">
+                    <a href="">Bebidas embriagantes</a>
+                    <a href="">Rollos</a>
+                    <a href="">Menu infantil :D</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Direcciones<i class="fa-solid fa-angles-down"></i></button></button>
+                <div class="dropdown-content">
+                    <a href="">Locaciones</a>
+                    <a href="">Google maps</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Contactos<i class="fa-solid fa-angles-down"></i></button></button>
+                <div class="dropdown-content">
+                    <a href="">Formulario</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Juegos<i class="fa-solid fa-angles-down"></i></button></button>
+                <div class="dropdown-content">
+                    <a href="">elPiton</a>
+                    <a href="">Buscaminas en vietman</a>
+                    <a href="">Warzone</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="contactos"> <img src="feis.png" alt="home" width="100" height="100"></div>
+        <div class="contactos"> <img src="insta.png" alt="home" width="100" height="100"></div>
+        <div class="contactos"> <img src="tiktok.png" alt="home" width="100" height="100"></div>
+
+    </header>
+
+    <main>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="banner menu.jpg" width="1366" height="400">
+            </div>
+            <br>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("mySlides");
+            var time = 0;
+            var enabled = 1;
+            if (enabled = 1) {
+                showSlides();
+                enabled = 0;
+            }
+            function showSlides() {
+                let i;
+                time = 3000;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                if (enabled = 1) {
+                    time = 3000;
+                    setTimeout(showSlides, time); // Change image every 2 seconds
+                } else { time = 10000 }
+            }
+            function add(n) {
+                enabled = 0;
+                let i;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex += n;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                if (slideIndex <= slides.length - slides.length) { slideIndex = slides.length }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+        <section>
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_1.png" width="410px" height="600px">
+                <pre>
+            <h2>Rollos fritos o frios <i class="fa-solid fa-angles-up"></i></h2>
+            <li>Camaron</li>
+            <li>Surimi</li>
+            <li>Huevo</li>
+                </pre>
+            </div>
+
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_2.jpg" width="410px" height="600px">
+                <pre>
+            <h2>Postres <i class="fa-solid fa-angles-up"></i></h2>
+            <li>Nagasakis</li>
+            <li>Pastel</li>
+            <li>Nieve</li>        
+                </pre>
+            </div>
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_3.jpg" width="410px" height="600px">
+                <pre>
+            <h2>Noodles <i class="fa-solid fa-angles-up"></i></h2>
+            <li>BBQ</li>
+            <li>Chipotle</li>
+            <li>Habanero</li>
+                </pre>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_4.jpg" width="410px" height="600px"> 
+                <pre>
+            <h2>Entradas <i class="fa-solid fa-angles-up"></i></h2>
+            <li>Kuromi</li>
+            <li>Sushimi</li>
+            <li>Mitsubishis</li>    
+                </pre>
+            </div>
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_5.jpg" width="410px" height="600px"> 
+                <pre>
+            <h2>Entradas <i class="fa-solid fa-angles-up"></i></h2>
+            <li>Vasai</li>
+            <li>Tori</li>
+            <li>Yummy Yummy</li>
+                </pre>
+            </div>
+            <div class="cuadro_grande">  <img src="imagenesmenu/item_6.jpg" width="410px" height="600px">
+                <pre>
+            <h2>Menu para niños <i class="fa-solid fa-angles-up"></i></h2>
+            <li>Nuggets</li>
+            <li>Papitas </li>
+            <li>Deditos de pescado</li>
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer_img"> <img src="Facturacion_1.png" alt="facturacion" width="150px" height="150px">  </div>     
+        <div class="footer_img"> <img src="Franquicias_1.png" alt="franquicias" width="150px" height="150px">   </div>  
+        <div class="footer_img"><img src="Bolsa de trabajo_1.png" alt="bolsa de trabajo" width="150px" height="150px"> </div>  
+       
+    </footer>
+</body>
+</body>
+</html>

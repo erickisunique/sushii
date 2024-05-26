@@ -1,0 +1,256 @@
+/*<-----------------------Starter variables-------------------->*/
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color:rgb(0, 0, 0);   
+}
+body{
+    max-width: 1366px;
+    max-height: 2000px;
+    margin:auto;
+}
+
+/* <-----------------------ONU links-------------------------->*/
+#house{
+    float:left;
+    
+}
+header{
+    position:fixed;
+    width:1366px;
+    height:100px;
+    background-color: #dac975;
+    padding: 0 0 0 1%;
+    z-index: 1000;
+    
+}
+
+/* <-----------------------Navigation-------------------------->*/
+nav {
+    margin-left:100px;
+    width:800px;
+    float:left;
+    padding: 28px 0 0 1%;
+  
+}
+
+.dropbtn {
+    background-color: #dac975;
+    color: #EE3424;
+    font-weight: 600;
+    padding: 0 30px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+   
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9c9;
+    min-width: 460px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.692);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 20px;
+    color: black;
+    height: 70px; 
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: rgba(207, 207, 207, 0.443);
+}
+.dropdown:hover .dropdown-content {
+    
+    bottom: height;
+    display:block;
+}
+.dropdown:hover .dropbtn {
+    transition: .25s;
+    background-color: #f9f9f9;
+    color: black;  
+}
+/*<-----------------------Dropdown arrows--------------------->*/
+.fa-solid{
+    position: absolute; 
+    margin-left:5px;
+    color: #EE3424;
+}
+/* <-----------------------Contacts-------------------------->*/
+.contactos{
+    margin-left:0px;
+    display:inline-block;
+}
+/*<------------------------Carousel------------------------------->*/
+.mySlides {
+    margin-top:100px;
+    box-shadow: 0px 10px 0px 0px rgb(49, 110, 167);
+    display: none;
+}
+
+img {
+    
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    
+    max-width: 2000px;
+    float:left;
+    margin-left:0px;
+    margin-top:100px; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    background-color: #cb4444;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 0 3px 3px 0;
+    margin-left:8px;
+    top:420px;
+    scale: 200%;
+    user-select: none;
+    color: #dac975;
+    transition-duration: .5s;
+  }
+.next:hover{
+    background-color: #dbdbdb;
+    color: #ffffff;
+}
+.prev:hover{
+    background-color: #dbdbdb;
+    color: #ffffff;
+}
+/* Position the "next button" to the right */
+.next {
+    margin-left:1175px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 20px;
+  margin-top:620px; 
+  position: absolute;
+  top: 0;
+  margin-left:600px;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*<------------------------Images------------------------------->*/
+section{
+    margin-top:100px;
+    margin-left: 10px;
+    width:1366px; 
+    float:left;
+
+}
+strong{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    margin-right:400px;
+    
+}
+.cuadro_pequeno{
+    
+    display: inline-block;
+    width: 200px; 
+    height:200px; 
+    background-color: rgb(253, 212, 75);
+    
+    margin-top: 40px; 
+    margin-left:80px;
+    box-shadow: 10px 10px 0px 0px rgb(49, 110, 167);
+    margin-bottom: 100px; 
+}
+
+.cuadro_grande{
+    
+    display: inline-block;
+    position:relative;
+    width: 410px; 
+    height:600px; 
+    background-color: rgb(253, 212, 75);
+    margin-top: 40px; 
+    margin-left:30px;
+    box-shadow: 10px 10px 0px 0px rgb(49, 110, 167);
+    margin-bottom: 50px;
+    overflow: hidden; 
+}
+.cuadro_grande pre{
+    width:410px; 
+    height:600px;
+    background-color: rgba(0, 0, 0, 0.63);
+    position:absolute; 
+    bottom:-560px; 
+    color: white;
+    transition: .5s; 
+    padding-left:40px;
+    font-size: 30px;
+}
+.cuadro_grande li{
+    margin-top:20px;
+    color: white;
+    height:1px;
+}
+.cuadro_grande h2{
+    float:left;
+    color: rgb(252, 235, 142);
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.cuadro_grande .fa-solid{
+    color: rgb(142, 193, 252);
+}
+.cuadro_grande :hover{
+    bottom:-300px; 
+}
+/*<------------------------Footer------------------------------->*/
+footer{
+    margin-top:200px;
+    float:left;
+    background-color: #e4d486;
+    height:200px;
+    width:1366px;
+    padding: 25px 0 0 0;
+}
+.footer_img{
+    margin-right:232px;
+    margin-left:70px;
+    display:inline-block;
+}
+
+
+
+

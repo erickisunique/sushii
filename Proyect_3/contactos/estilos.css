@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color:rgb(0, 0, 0);  
+}
+
+
+#formulario1{
+    display: flex;
+    
+    justify-content: center;
+   
+    padding: 10px;
+    margin-right:80px; 
+}
+.container1{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+}
+.container1 .titulo{
+    font-size: 25px;
+    font-weight: 500;
+}
+.container1 form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 12px 0;
+}
+form .info{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.info input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+    border-color: skyblue;
+}
+.boton {
+    width: 75px;
+    height: 45px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #b4c0b7;
+}
+/*<-----------------------Starter variables-------------------->*/
+
+body{
+    max-width: 1366px;
+    max-height: 2000px;
+    margin:auto;
+}
+
+/* <-----------------------ONU links-------------------------->*/
+#house{
+    float:left;
+    
+}
+header{
+    position:fixed;
+    width:1366px;
+    height:100px;
+    background-color: #dac975;
+    padding: 0 0 0 1%;
+    z-index: 1000;
+    
+}
+
+/* <-----------------------Navigation-------------------------->*/
+nav {
+    margin-left:100px;
+    width:800px;
+    float:left;
+    padding: 28px 0 0 1%;
+  
+}
+
+.dropbtn {
+    background-color: #dac975;
+    color: #EE3424;
+    font-weight: 600;
+    padding: 0 30px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9c9;
+    min-width: 460px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.692);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 20px;
+    color: black;
+    height: 70px; 
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: rgba(207, 207, 207, 0.443);
+}
+.dropdown:hover .dropdown-content {
+    
+    bottom: height;
+    display:block;
+}
+.dropdown:hover .dropbtn {
+    transition: .25s;
+    background-color: #f9f9f9;
+    color: black;  
+}
+/*<-----------------------Dropdown arrows--------------------->*/
+.fa-solid{
+    position: absolute; 
+    margin-left:5px;
+    color: #EE3424;
+}
+/* <-----------------------Contacts-------------------------->*/
+.contactos{
+    margin-left:0px;
+    display:inline-block;
+}
+
+section{
+    margin-top:200px;
+    margin-left: 120px;
+    width:1366px; 
+    float:left;
+}
+strong{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    margin-right:400px;
+    
+}
+.cuadro_grande{
+    display: inline-block;
+    position:relative;
+    width: 410px; 
+    height:600px; 
+    background-color: rgb(253, 212, 75);
+    margin-top: 40px; 
+    margin-left:30px;
+    box-shadow: 10px 10px 0px 0px rgb(49, 110, 167);
+    margin-bottom: 50px;
+    overflow: hidden; 
+}
+.cuadro_grande pre{
+    width:410px; 
+    height:600px;
+    background-color: rgba(0, 0, 0, 0.63);
+    position:absolute; 
+    bottom:-560px; 
+    color: white;
+    transition: .5s; 
+    padding:20px;
+    font-size: 30px;
+}
+.cuadro_grande :hover{
+    bottom:-300px; 
+}
+/*<------------------------Footer------------------------------->*/
+footer{
+    margin-top:200px;
+    float:left;
+    background-color: #e4d486;
+    height:200px;
+    width:1366px;
+    padding: 25px 0 0 0;
+}
+.footer_img{
+    margin-right:232px;
+    margin-left:70px;
+    display:inline-block;
+}
+
+
+
+
+
+
